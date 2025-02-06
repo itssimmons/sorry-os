@@ -1,5 +1,5 @@
 {
-  "name": "windows-xp",
+  "name": "sorry-os",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,18 +8,26 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "browserslist": [
+    ">0.3%",
+    "not dead",
+    "not op_mini all"
+  ],
   "dependencies": {
+    "geist-icons": "^1.2.3",
+    "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.1.6"
+    "react-hammerjs": "^1.0.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/react-hammerjs": "^1.0.7",
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
-    "@eslint/eslintrc": "^3"
+    "typescript": "^5"
   }
 }

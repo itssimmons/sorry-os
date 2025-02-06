@@ -1,16 +1,53 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
+
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const matrixDots = localFont({
+  fallback: ["monospace"],
+  variable: "--font-matrix-dots",
+  src: [
+    {
+      path: "../static/fonts/MatrixDots/MatrixDots.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const system = localFont({
+  fallback: ["sans-serif"],
+  variable: "--font-system",
+  src: [
+    {
+      path: "../static/fonts/System/System-bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../static/fonts/System/System-medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../static/fonts/System/System-regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../static/fonts/System/System-light.woff2",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../static/fonts/System/System-thin.woff2",
+      weight: "100",
+      style: "normal",
+    },
+  ],
 });
+
+const fonts = [system.variable, matrixDots.variable].join(" ");
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,9 +61,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
-      </body>
+      <body className={fonts}>{children}</body>
     </html>
   );
 }

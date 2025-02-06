@@ -1,0 +1,13 @@
+.colText {
+  min-width: 750px;
+  min-height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  font-family: var(--font-matrix-dots);
+  line-height: 185%;
+  font-size: 1rem;
+}

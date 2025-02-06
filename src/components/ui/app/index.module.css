@@ -1,0 +1,112 @@
+.envelope {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 4px;
+  padding: 6px;
+  border-radius: 4px;
+  
+  background: none;
+  border: none;
+
+  &:hover {
+    background-color: hsl(4 1% 29% / 0.2);
+  }
+
+  &:active {
+    background-color: hsl(4 1% 29% / 0.35);
+  }
+}
+
+.title {
+  cursor: default;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--font-system);
+  color: hsl(0 0% 100% / 0.8);
+  text-align: center;
+  user-select: none;
+}
+
+.icon {
+  cursor: default;
+  user-select: none;
+  object-fit: contain;
+}
+
+.window {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  border-radius: 5px;
+
+  overflow: hidden;
+  z-index: 100;
+  
+  background-color: hsl(0 0% 100%);
+  box-shadow: 2.9px 2.9px 2.2px -8px rgba(0, 0, 0, 0.013),
+    6.7px 6.7px 5.2px -8px rgba(0, 0, 0, 0.019),
+    11.8px 11.8px 9.3px -8px rgba(0, 0, 0, 0.023),
+    19.2px 19.2px 15.4px -8px rgba(0, 0, 0, 0.027),
+    30.5px 30.5px 25.4px -8px rgba(0, 0, 0, 0.031),
+    50.6px 50.6px 44.4px -8px rgba(0, 0, 0, 0.037),
+    100px 100px 96px -8px rgba(0, 0, 0, 0.05);
+}
+
+.windowHeader {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+}
+
+.windowHeader div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	column-gap: 4px;
+}
+
+.windowHeader div strong {
+	font-size: 1rem;
+	font-weight: 400;
+	font-family: var(--font-system);
+	color: hsl(0 0% 0%);
+}
+
+.windowHeader div button {
+	width: 24px;
+	height: 24px;
+
+	display: grid;
+	place-items: center;
+	background: none;
+	border: none;
+
+	border-radius: 5px;
+	background-color: hsl(4 1% 90%);
+
+	font-size: 1rem;
+	font-weight: 700;
+	color: hsl(0 0% 0%);
+
+	&:hover {
+		background-color: hsl(4 1% 29% / 0.2);
+	}
+
+	&:active {
+		background-color: hsl(4 1% 29% / 0.35);
+	}
+}
+
+.windowBody {
+  position: relative;
+  overflow: hidden;
+  padding: 6px;
+}

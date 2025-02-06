@@ -1,0 +1,9 @@
+.page {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+
+  color: var(--booting-foreground);
+  background: var(--booting-background);
+}
