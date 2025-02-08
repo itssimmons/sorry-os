@@ -28,7 +28,6 @@ const PressableImage = ({
         width="fit-content"
         useShow={() => [show, setShow]}
       >
-        {" "}
         <div style={{ height: "100%", width: "100%" }}>
           <Image
             src={src}
