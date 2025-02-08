@@ -5,32 +5,33 @@ import { useRouter } from "next/navigation";
 
 import styles from "./index.module.css";
 
-const fps = 15;
+const fps = 12;
 
 const texts = [
-  "SorryOS is booting...",
-  "Please wait while the system is booting.",
-  "Is loading a lot of care and love for you.",
-  "Please be patient.",
-  "This is a very long time.",
-  "Veeeery long time.",
-  "Nah I'm kidding :p",
-  "I just love you",
-  "And I want to be with you",
-  "You are everything to me",
-  "While this PC is booting I wanted to say all my love",
-  "To you",
-  "I love you x2",
-  "You are the only thing I need",
-  "I'll do anything for you",
-  "I'm so happy when you are with me",
-  "I really appreciate all the love and care you give to me",
-  "Thank you for being in my life",
-  "You are the best thing that ever happened to me",
-  "I want you to know that I really care about our relationship",
-  "You are my chiquitita hemosha <3",
-  "Logging in to the system in 100%",
-  "Redirecting to the login screen...",
+  "SorryOS está iniciando...",
+  "Espera mientras el sistema se carga...",
+  "Está cargando un moootonnn de cosas...",
+  "Por favor, sea paciente...",
+  "Puede tardar un rato...",
+  "Tal vez ese rato sea 1 hora :D",
+  "Es broma, no tarda tanto :p",
+  "Mientras esperas te doy un poco de cariño ¿Por qué no?",
+  "Hola........ Te Amo Mucho <3",
+  "Y quiero estar contigo.",
+  "Lo eres todo para mí.",
+  "Te AMOOO x2",
+  "Eres todo lo que quiero en la vida.",
+  "Literal lo haría todo por tí.",
+  "No sabes lo feliz que soy cuando estoy contigo.",
+  "De verdad aprecio todo el cariño que me das.",
+  "Gracias por estar en mi vida.",
+  "Y gracias por todo lo que has ayudado a mejorar.",
+  "Eres lo mejor que me ha podido pasar en la vida.",
+  "Quiero que sepas que de verdad me importa mucho nuestra relación.",
+  "Eres mi chiquitita peshosa :)))",
+  "Por cierto, el sistema ya había cargado :D",
+  "Solo te quería escribir mensajes bonitos :p",
+  "Redireccionando a la página de inicio de sesión...",
 ];
 
 export default function BootingLog() {
