@@ -4,11 +4,11 @@ import App from "@/components/ui/app";
 import PressableImage from "@/components/pressable-image";
 
 const collage = [
-  "/pictures/20231018_194554.jpg",
-  "/pictures/IMG-20240623-WA0028~2.jpeg",
-  "/pictures/IMG-20240730-WA0010.jpg",
-  "/pictures/IMG-20240807-WA0006.jpeg",
-  "/pictures/IMG-20241013-WA0160.jpg",
+  "/pictures/him/20231018_194554.jpg",
+  "/pictures/him/IMG-20240623-WA0028~2.jpeg",
+  "/pictures/him/IMG-20240730-WA0010.jpg",
+  "/pictures/him/IMG-20240807-WA0006.jpeg",
+  "/pictures/him/IMG-20241013-WA0160.jpg",
 ];
 
 const PicturesApp = () => {

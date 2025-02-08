@@ -1,7 +1,7 @@
 import { Cross } from "geist-icons";
 import Image from "next/image";
 import React, {
-  JSX,
+  type JSX,
   ReactElement,
   useEffect,
   useMemo,
@@ -10,12 +10,11 @@ import React, {
 } from "react";
 import Hammer from "react-hammerjs";
 
+import withPortal from "@/hoc/withPortal";
 import useDeepIndex from "@/hooks/useDeepIndex";
 import "@/polyfills/Number.clamp";
 
 import styles from "./index.module.css";
-import withPortal from "@/hoc/withPortal";
-
 
 namespace App {
   export const Envelope = ({
@@ -31,7 +30,12 @@ namespace App {
         `window-${title}`
           .split(" ")
           .join("-")
+          .split(" ")
+          .join("-")
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
           .replace(/[^\x00-\x7F]/g, "")
+          .replace(/[^a-zA-Z0-9-]/g, "")
           .toLowerCase(),
       [title]
     );
