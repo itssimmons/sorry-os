@@ -1,50 +1,36 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
 import BinApp from "@/components/apps/bin";
+import DinoGame from "@/components/apps/dino";
+import InternetExplorerApp from "@/components/apps/google-chrome";
 import NotepadApp from "@/components/apps/notepad";
-import PicturesApp from "@/components/apps/pictures";
+import PicturesHimApp from "@/components/apps/pictures-him";
+import PicturesHerApp from "@/components/apps/pictures-her";
+import TetrisGame from "@/components/apps/tetris";
+import MineSweeperGame from "@/components/apps/minesweeper";
+import PacmanGame from "@/components/apps/pacman";
+import SnakeGame from "@/components/apps/snake";
+import Clock from "@/components/clock";
 
 import styles from "./page.module.css";
 
-const Clock = () => {
-  const [time, setTime] = useState<Date>(new Date());
-  const [binary, setBinary] = useState<1 | 0>(0);
-
-  useEffect(() => {
-    const id = setInterval(() => {
-      setBinary((binary) => (binary === 0 ? 1 : 0));
-    }, 800);
-
-    return () => clearInterval(id);
-  }, []);
-
-  useEffect(() => {
-    const id = setInterval(() => {
-      setTime(new Date());
-    }, 1000 * 60);
-
-    return () => clearInterval(id);
-  }, []);
-
-  return (
-    <p className={styles.time}>
-      {time.getHours().toString().padStart(2, "0")}
-      <span style={{ color: binary === 0 ? "unset" : "transparent" }}>:</span>
-      {time.getMinutes().toString().padStart(2, "0")}
-    </p>
-  );
-};
 
 export default function Page() {
   return (
     <main className={styles.page}>
-      <section className={styles.desktop}>
+      <section id="desktop" className={styles.desktop}>
         <BinApp />
         <NotepadApp />
-        <PicturesApp />
+        <PicturesHerApp />
+        <PicturesHimApp />
+        <TetrisGame />
+        <DinoGame />
+        <PacmanGame />
+        <SnakeGame />
+        <MineSweeperGame />
+        <InternetExplorerApp />
       </section>
 
       <footer className={styles.taskbar}>

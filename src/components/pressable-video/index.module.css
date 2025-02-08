@@ -1,0 +1,59 @@
+.video {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.video:hover::after {
+  visibility: visible;
+}
+
+.video:hover p {
+  visibility: visible;
+}
+
+.video:active::before {
+  visibility: visible;
+}
+
+.video p {
+  visibility: hidden;
+
+  position: absolute;
+  bottom: 9px;
+  left: 6px;
+  font-size: 0.625rem;
+  font-family: var(--font-matrix-dots);
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 200;
+}
+
+.video::before {
+  content: " ";
+  visibility: hidden;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: hsl(0deg 0% 0% / 0.12);
+  z-index: 100;
+}
+
+.video::after {
+  content: " ";
+  visibility: hidden;
+
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(0deg, hsl(0deg 0% 0% / 0.5), transparent);
+  z-index: 100;
+}

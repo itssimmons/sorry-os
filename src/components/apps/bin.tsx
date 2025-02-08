@@ -1,21 +1,15 @@
 "use client";
 
-import {
-  AppEnvelope,
-  AppGrid,
-  AppIco,
-  AppTitle,
-  AppWindow,
-} from "@/components/ui/app";
+import App from "@/components/ui/app";
 
 const BinApp = () => {
   return (
-    <AppGrid>
-      <AppEnvelope>
-        <AppIco src="/os/270.ico" />
-        <AppTitle>Cesta</AppTitle>
-      </AppEnvelope>
-      <AppWindow width={500} height={500}>
+    <App.Grid>
+      <App.Envelope>
+        <App.Ico src="/os/270.ico" />
+        <App.Title>Cesta</App.Title>
+      </App.Envelope>
+      <App.Window width={500} height={500}>
         <table>
           <thead>
             <tr>
@@ -40,8 +34,8 @@ const BinApp = () => {
             </tr>
           </tbody>
         </table>
-      </AppWindow>
-    </AppGrid>
+      </App.Window>
+    </App.Grid>
   );
 };
 

@@ -8,7 +8,7 @@
   row-gap: 4px;
   padding: 6px;
   border-radius: 4px;
-  
+
   background: none;
   border: none;
 
@@ -29,6 +29,7 @@
   color: hsl(0 0% 100% / 0.8);
   text-align: center;
   user-select: none;
+  text-shadow: 4px 1px 6px rgba(0, 0, 0, 0.3);
 }
 
 .icon {
@@ -46,7 +47,7 @@
 
   overflow: hidden;
   z-index: 100;
-  
+
   background-color: hsl(0 0% 100%);
   box-shadow: 2.9px 2.9px 2.2px -8px rgba(0, 0, 0, 0.013),
     6.7px 6.7px 5.2px -8px rgba(0, 0, 0, 0.019),
@@ -58,54 +59,60 @@
 }
 
 .windowHeader {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
 }
 
 .windowHeader div {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: flex-start;
-	column-gap: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 4px;
 }
 
 .windowHeader div strong {
-	font-size: 1rem;
-	font-weight: 400;
-	font-family: var(--font-system);
-	color: hsl(0 0% 0%);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: var(--font-system);
+  color: hsl(0 0% 0%);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 180px;
+  overflow: hidden;
 }
 
 .windowHeader div button {
-	width: 24px;
-	height: 24px;
+  width: 24px;
+  height: 24px;
 
-	display: grid;
-	place-items: center;
-	background: none;
-	border: none;
+  display: grid;
+  place-items: center;
+  background: none;
+  border: none;
 
-	border-radius: 5px;
-	background-color: hsl(4 1% 90%);
+  border-radius: 5px;
+  background-color: hsl(4 1% 90%);
 
-	font-size: 1rem;
-	font-weight: 700;
-	color: hsl(0 0% 0%);
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(0 0% 0%);
 
-	&:hover {
-		background-color: hsl(4 1% 29% / 0.2);
-	}
+  &:hover {
+    background-color: hsl(4 1% 29% / 0.2);
+  }
 
-	&:active {
-		background-color: hsl(4 1% 29% / 0.35);
-	}
+  &:active {
+    background-color: hsl(4 1% 29% / 0.35);
+  }
 }
 
 .windowBody {
+  --header-height: 34px;
+  height: calc(100% - var(--header-height));
   position: relative;
   overflow: hidden;
   padding: 6px;
