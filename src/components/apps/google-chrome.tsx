@@ -1,6 +1,5 @@
 "use client";
 
-
 import Search from "@/components/icon/search";
 import App from "@/components/ui/app";
 

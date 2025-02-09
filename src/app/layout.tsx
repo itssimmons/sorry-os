@@ -55,8 +55,8 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/favicon.svg",
-        href: "/favicon.svg",
+        url: "/icon.svg",
+        href: "/icon.svg",
       },
     ],
   },

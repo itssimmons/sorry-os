@@ -52,7 +52,7 @@ export default function Page() {
     <main className={styles.page}>
       <section className={styles.authentication}>
         <div className={styles.logo}>
-          <Image src="/os.png" alt="SorryOS Logo" width={64} height={64} />
+          <Image src="/system.png" alt="SorryOS Logo" width={64} height={64} />
           <p>SorryOS</p>
         </div>
 

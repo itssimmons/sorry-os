@@ -1,3 +1,5 @@
+'use client';
+
 import { Cross } from "geist-icons";
 import Image from "next/image";
 import React, {

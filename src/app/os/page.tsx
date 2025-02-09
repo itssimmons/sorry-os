@@ -41,7 +41,7 @@ export default function Page() {
 
       <footer className={styles.taskbar}>
         <button>
-          <Image src="/os.png" alt="SorryOS Logo" width={24} height={24} />
+          <Image src="/system.png" alt="SorryOS Logo" width={24} height={24} />
           <p>Start</p>
         </button>
 
