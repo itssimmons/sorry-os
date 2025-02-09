@@ -6,7 +6,7 @@ const DinoGame = () => {
   return (
     <App.Grid>
       <App.Envelope>
-        <App.Ico src="/logos/dino.webp" />
+        <App.Ico src="/logos/dino.png" />
         <App.Title>Dino</App.Title>
       </App.Envelope>
       <App.Window width={555} height={333}>

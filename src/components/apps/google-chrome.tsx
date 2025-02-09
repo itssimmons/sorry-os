@@ -39,7 +39,7 @@ const InternetExplorerApp = () => {
     <>
       <App.Grid>
         <App.Envelope>
-          <App.Ico src="/logos/internet-explorer.webp" />
+          <App.Ico src="/logos/internet-explorer.png" />
           <App.Title>Internet Explorer</App.Title>
         </App.Envelope>
         <App.Window width={800} height={490}>

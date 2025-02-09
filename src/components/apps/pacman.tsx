@@ -6,7 +6,7 @@ const PacmanGame = () => {
   return (
     <App.Grid>
       <App.Envelope>
-        <App.Ico src="/logos/pacman.webp" />
+        <App.Ico src="/logos/pacman.png" />
         <App.Title>Pacman</App.Title>
       </App.Envelope>
       <App.Window width={470} height={620}>

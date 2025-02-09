@@ -6,7 +6,7 @@ const TetrisGame = () => {
   return (
     <App.Grid>
       <App.Envelope>
-        <App.Ico src="/logos/tetris.webp" />
+        <App.Ico src="/logos/tetris.png" />
         <App.Title>Tetris</App.Title>
       </App.Envelope>
       <App.Window width={334} height={668}>

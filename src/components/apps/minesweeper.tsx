@@ -6,7 +6,7 @@ const MineSweeperGame = () => {
   return (
     <App.Grid>
       <App.Envelope>
-        <App.Ico src="/logos/minesweeper.webp" />
+        <App.Ico src="/logos/minesweeper.png" />
         <App.Title>Buscaminas</App.Title>
       </App.Envelope>
       <App.Window width={310} height={500}>
