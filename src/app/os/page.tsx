@@ -16,6 +16,7 @@ import SnakeGame from "@/components/apps/snake";
 import Clock from "@/components/clock";
 
 import styles from "./page.module.css";
+import GiftApp from "@/components/apps/gift-1";
 
 export default function Page() {
   return (
@@ -37,6 +38,7 @@ export default function Page() {
         <SnakeGame />
         <MineSweeperGame />
         <InternetExplorerApp />
+        <GiftApp />
       </section>
 
       <footer className={styles.taskbar}>
