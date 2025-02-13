@@ -2,11 +2,16 @@
   "name": "sorry-os",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+  },
+  "engines": {
+    "node": "23.x",
+    "pnpm": "9.x"
   },
   "browserslist": [
     ">0.3%",
@@ -23,7 +28,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@types/node": "^20",
+    "@types/node": "^22.13.1",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/react-hammerjs": "^1.0.7",

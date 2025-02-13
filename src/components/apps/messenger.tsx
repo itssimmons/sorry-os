@@ -2,17 +2,16 @@
 
 import App from "@/components/ui/app";
 
-const SnakeGame = () => {
+const PaintApp = () => {
   return (
     <App.Grid>
       <App.Envelope>
-        <App.Ico src="/logos/snake.png" />
-        <App.Title>Snake</App.Title>
+        <App.Ico src="/logos/paint.ico" />
+        <App.Title>Paint</App.Title>
       </App.Envelope>
-      <App.Window width={530} height={630}>
+      <App.Window width={900} height={700}> 
         <iframe
-          id="snake-game"
-          src="https://mahmoud-8.github.io/snake-game/"
+          src="https://www.tldraw.com/"
           frameBorder="0"
           scrolling="no"
           width="100%"
@@ -24,4 +23,4 @@ const SnakeGame = () => {
   );
 };
 
-export default SnakeGame;
+export default PaintApp;
