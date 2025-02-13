@@ -10,12 +10,12 @@ export async function POST(request: Request) {
     updatedAt: new Date().toISOString(),
   };
 
-  await ORM.insert("users", payload);
+  const { lastInsertRowid } = await ORM.insert("users", payload);
 
   return Response.json(
     {
       statusText: "created",
-      record: payload,
+      record: { id: lastInsertRowid, ...payload },
     },
     { status: 200, headers: { "Content-Type": "application/json" } }
   );

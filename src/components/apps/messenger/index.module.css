@@ -1,0 +1,145 @@
+/* Logged In */
+.loggedIn {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.profile, .credentials {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  align-items: center;
+}
+
+.profile input {
+  min-height: 20px;
+}
+
+.credentials input {
+  min-height: 35px;
+}
+
+.credentials button {
+  min-height: 35px;
+  width: 100%;
+}
+
+.profile img {
+  height: 120px;
+  width: 120px;
+  aspect-ratio: 1 / 1;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 6px;
+}
+
+.logInForm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  width: 225px;
+}
+
+/* Global Channel */
+.channel {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 35px 1fr 35px;
+  grid-template-columns: 1fr;
+  row-gap: 8px;
+}
+
+.channelHeader {
+  font-family: var(--font-matrix-dots);
+  font-size: 0.875rem;
+  color: #171717;
+  padding: 6px;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 12px;
+  padding: 6px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+
+  &[data-itsme="true"] {
+    margin-left: auto;
+    margin-right: 0px;
+  }
+}
+
+.message[data-itsme="true"] header {
+  flex-direction: row-reverse;
+}
+
+.message header {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.message header div[role="metadata"] strong {
+  font-family: var(--font-matrix-dots);
+  font-size: 0.75rem;
+  color: #6b6b6b;
+}
+
+.message header img {
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.message p[role="content"] {
+  margin-top: 3px;
+  font-family: var(--font-system);
+  font-size: 0.875rem;
+  color: #171717;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.submit {
+  display: grid;
+  place-items: center;
+  border: none;
+  background-color: #f3f3f3;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  flex-basis: 35px;
+
+  &:hover {
+    background-color: #e3e3e3;
+  }
+  &:active {
+    background-color: #dadada;
+  }
+}
+
+.input {
+  width: 100%;
+  height: 35px;
+  border-radius: 4px;
+  border: none;
+  flex: 1;
+  outline: none;
+  padding-inline: 10px;
+  background-color: #f3f3f3;
+  border: 1px solid #dadada;
+  box-shadow: inset 0 2px 4px 0 color-mix(in srgb, black 5%, transparent);
+}

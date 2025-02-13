@@ -2,10 +2,13 @@ import { DatabaseSync } from "node:sqlite";
 import path from "node:path";
 
 const database = new DatabaseSync(
-  path.join(process.cwd(), "database", "database.sqlite")
+  path.join(process.cwd(), "database", "database.sqlite"),
+  {
+    enableForeignKeyConstraints: true,
+  }
 );
 
-export const METHODS = {
+export const ORM = {
   insert(table: string, data: object) {
     return database
       .prepare(
@@ -23,6 +26,9 @@ export const METHODS = {
       .prepare(`SELECT * FROM ${table} ORDER BY createdAt DESC`)
       .all();
   },
+  sql(query: string) {
+    return database.prepare(query);
+  },
 };
 
-export default METHODS;
+export default ORM;

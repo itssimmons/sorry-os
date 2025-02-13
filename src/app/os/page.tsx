@@ -4,20 +4,21 @@ import Image from "next/image";
 
 import BinApp from "@/components/apps/bin";
 import DinoGame from "@/components/apps/dino";
+import GiftApp from "@/components/apps/gift-1";
 import InternetExplorerApp from "@/components/apps/google-chrome";
+import MessengerApp from "@/components/apps/messenger";
+import MineSweeperGame from "@/components/apps/minesweeper";
 import NotepadApp from "@/components/apps/notepad";
-import PicturesHimApp from "@/components/apps/pictures-him";
+import PacmanGame from "@/components/apps/pacman";
+import PaintApp from "@/components/apps/paint";
 import PicturesBothApp from "@/components/apps/pictures-both";
 import PicturesHerApp from "@/components/apps/pictures-her";
-import TetrisGame from "@/components/apps/tetris";
-import MineSweeperGame from "@/components/apps/minesweeper";
-import PacmanGame from "@/components/apps/pacman";
+import PicturesHimApp from "@/components/apps/pictures-him";
 import SnakeGame from "@/components/apps/snake";
+import TetrisGame from "@/components/apps/tetris";
 import Clock from "@/components/clock";
 
 import styles from "./page.module.css";
-import GiftApp from "@/components/apps/gift-1";
-import PaintApp from "@/components/apps/paint";
 
 export default function Page() {
   return (
@@ -41,6 +42,7 @@ export default function Page() {
         <InternetExplorerApp />
         <GiftApp />
         <PaintApp />
+        <MessengerApp />
       </section>
 
       <footer className={styles.taskbar}>
