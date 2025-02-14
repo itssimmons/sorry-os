@@ -111,7 +111,7 @@
 .form {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  column-gap: 6px;
 }
 
 .submit {

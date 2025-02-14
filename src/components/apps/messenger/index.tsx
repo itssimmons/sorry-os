@@ -160,7 +160,6 @@ const GlobalChannel = () => {
 
       <section className={styles.messages}>
         {chats.map((chat, i) => {
-          console.log(session!.id);
           const itsMe = chat.senderId === session!.id;
 
           return (

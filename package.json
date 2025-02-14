@@ -10,8 +10,8 @@
     "lint": "next lint"
   },
   "engines": {
-    "node": "23.x",
-    "pnpm": "9.x"
+    "node": ">=22.x",
+    "pnpm": ">=9.x"
   },
   "browserslist": [
     ">0.3%",

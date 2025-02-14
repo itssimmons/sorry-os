@@ -1,8 +1,10 @@
+import { BASE_URL } from "@/env";
+
 const UserService = {
   async login({ username, avatar }: { username: string; avatar: string }) {
     let payload: Partial<User> = { username, avatar };
 
-    const res = await fetch("/api/users/login", {
+    const res = await fetch(`${BASE_URL}/v1/users/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json; charset=utf-8",
