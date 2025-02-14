@@ -1,6 +1,7 @@
 "use client";
 
 import App from "@/components/ui/app";
+import { useState } from "react";
 
 const NotepadApp = ({
   children,
@@ -9,6 +10,8 @@ const NotepadApp = ({
   children: string;
   title: string;
 }) => {
+  const [plainText, setPlainText] = useState(children);
+
   return (
     <App.Grid>
       <App.Envelope>
@@ -17,7 +20,8 @@ const NotepadApp = ({
       </App.Envelope>
       <App.Window width={430} height={525}>
         <textarea
-          defaultValue={children}
+          value={plainText}
+          onChange={(e) => setPlainText(e.target.value)}
           style={{
             border: "none",
             outline: "none",

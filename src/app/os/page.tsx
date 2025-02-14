@@ -19,6 +19,8 @@ import TetrisGame from "@/components/apps/tetris";
 import Clock from "@/components/clock";
 
 import styles from "./page.module.css";
+import PuzzleApp from "@/components/apps/puzzles";
+import FlappyBirdGame from "@/components/apps/traffic-run";
 
 export default function Page() {
   return (
@@ -30,6 +32,9 @@ export default function Page() {
         </NotepadApp>
         <NotepadApp title="Notita secreta 💞">
           {`Hola cariño en esta nota solo quiero desplegar mi amor por ti, eres increible y eres impresionante por ti haria lo que fuera, te amo de aqui hasta la luna de regreso dando 999 vueltas en el aire, por ti lo daria todo, tanto tu cuerpo como tu cara son la cosa más hermosa que me he topado en la vida, no me importa dejarlo todo e iniciar una nueva vida contigo en un país que nunca he estado, más bien para mi seria todo un placer, quiero estar a tu lado y decirte todo lo que te amo en persona tanto con acciones como con palabras, me fascinas de verdad te quiero muchisimo, te amo todavia más, eres todo para mi, estar sin ti ya es estar extrañandote ya es un vacio en mi vida, ya es tristeza para mi, significa mucho para mi el tiempo que pasamos juntos, el cariño y el estar juntos, amo tu presencia, amo tu sonrisa, amo tu cariño y amo cada parte de ti, eres unica en la vida y te voy a cuidar por el resto de mi vida incluso muerto te voy a cuidar no se como pero lo haré\n\nATT: Simoncito, tu chiquito delicioso 🥺\nPARA: Sandrita, mi caramelito muuyy dulce 🍭`}
+        </NotepadApp>
+        <NotepadApp title="🌹 Feliz San Valentin 🌹">
+          {`Hola Princesa de mi corazón te quiero desear un feliz SAN VALENTIN eres un amor de niña, un encanto, eres divina eres bellisima eres todo lo que quiero en una mujer, eres simplemente perfecta.\n\nTe amo y Te quiero a montones, sin tí ciertamente mi vida no seria lo mismo, aprecio cada segundo que dedicas de tu tiempo en mi, estoy absolutamente enamorado de tí, me fascinas, lo haría todo por ti y todo para verte feliz.\n\nAhora te quiero hacer una pregunta 🥺\n\n¿Te gustaría ser mi san valentín?\nRespuesta: \n\nEres la mejor persona que pude haber conocido jamássssss\n\nMe encanta estar contigo porque me siento el hombre más feliz del mundo.\n\nATT:\nCon mucho amor de Simóncin para Mi Bebé preciosisimaaaa.`}
         </NotepadApp>
         <PicturesHerApp />
         <PicturesBothApp />
@@ -43,6 +48,8 @@ export default function Page() {
         <GiftApp />
         <PaintApp />
         <MessengerApp />
+        <PuzzleApp />
+        <FlappyBirdGame />
       </section>
 
       <footer className={styles.taskbar}>

@@ -2,18 +2,18 @@
 
 import App from "@/components/ui/app";
 
-const PaintApp = () => {
+const PuzzleApp = () => {
   return (
     <App.Grid>
       <App.Envelope>
-        <App.Ico src="/logos/paint.ico" />
-        <App.Title>Paint</App.Title>
+        <App.Ico src="/logos/puzzle.webp" />
+        <App.Title>Puzzle</App.Title>
       </App.Envelope>
       <App.Window width={950} height={725}>  
         <iframe
-          src="https://excalidraw.com/"
+          src="https://puzzlegarage.com/?lang=es"
           frameBorder="0"
-          scrolling="no"
+          scrolling="yes"
           width="100%"
           height="100%"
           loading="lazy"
@@ -23,4 +23,4 @@ const PaintApp = () => {
   );
 };
 
-export default PaintApp;
+export default PuzzleApp;

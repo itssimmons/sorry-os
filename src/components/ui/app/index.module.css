@@ -29,7 +29,7 @@
   color: hsl(0 0% 100% / 0.8);
   text-align: center;
   user-select: none;
-  text-shadow: 4px 1px 6px rgba(0, 0, 0, 0.3);
+  text-shadow: 4px 1px 6px rgba(0, 0, 0, 0.6);
 }
 
 .icon {
@@ -51,11 +51,11 @@
   background-color: hsl(0 0% 100%);
   box-shadow: 2.9px 2.9px 2.2px -8px rgba(0, 0, 0, 0.013),
     6.7px 6.7px 5.2px -8px rgba(0, 0, 0, 0.019),
-    11.8px 11.8px 9.3px -8px rgba(0, 0, 0, 0.023),
-    19.2px 19.2px 15.4px -8px rgba(0, 0, 0, 0.027),
-    30.5px 30.5px 25.4px -8px rgba(0, 0, 0, 0.031),
-    50.6px 50.6px 44.4px -8px rgba(0, 0, 0, 0.037),
-    100px 100px 96px -8px rgba(0, 0, 0, 0.05);
+    11.8px 11.8px 9.3px -8px rgba(0, 0, 0, 0.02),
+    19.2px 19.2px 15.4px -8px rgba(0, 0, 0, 0.03),
+    30.5px 30.5px 25.4px -8px rgba(0, 0, 0, 0.04),
+    50.6px 50.6px 44.4px -8px rgba(0, 0, 0, 0.05),
+    100px 100px 96px -8px rgba(0, 0, 0, 0.085);
 }
 
 .windowHeader {

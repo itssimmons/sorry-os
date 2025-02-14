@@ -2,16 +2,16 @@
 
 import App from "@/components/ui/app";
 
-const PaintApp = () => {
+const FlappyBirdGame = () => {
   return (
     <App.Grid>
       <App.Envelope>
-        <App.Ico src="/logos/paint.ico" />
-        <App.Title>Paint</App.Title>
+        <App.Ico src="/logos/puzzle.webp" />
+        <App.Title>Flappy Brid</App.Title>
       </App.Envelope>
-      <App.Window width={950} height={725}>  
-        <iframe
-          src="https://excalidraw.com/"
+      <App.Window width={300} height={450}>  
+      <iframe
+          src="https://flappybird.io/"
           frameBorder="0"
           scrolling="no"
           width="100%"
@@ -23,4 +23,4 @@ const PaintApp = () => {
   );
 };
 
-export default PaintApp;
+export default FlappyBirdGame;
